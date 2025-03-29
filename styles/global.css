@@ -1,6 +1,3 @@
-/** Import Fonts **/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -129,8 +126,18 @@ header img {
 	max-width: 4rem;
 }
 
+header .profile.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 header .menu-button {
 	border: 0;
+	position: relative;
+	top: 0;
+	right: 0;
 	background-color: transparent;
 	align-self: flex-start;
 	
@@ -164,7 +171,7 @@ header:has(.menu-bar.active) .menu-button .menu-stick {
 }
 
 header:has(.menu-bar.active) .menu-button .menu-stick:nth-child(3) {
-	visibility: hidden;
+	display: none;
 }
 
 header:has(.menu-bar.active) .menu-button .menu-stick:nth-child(1) {
@@ -303,16 +310,20 @@ footer p, footer span {
 	padding-bottom: 1rem;
 }
 
-.menu-bar.active ul li:hover a {
+.menu-bar ul li:hover a {
 	color: var(--primary-color);
 } 
 
-.menu-bar.active a {
+.menu-bar a {
 	transition: 0.5s;
 	letter-spacing: 0.125rem;
 	font-size: 2rem;
 }
 
-.menu-bar.active a.active {
+.menu-bar a.active {
 	color: var(--primary-color);
+}
+
+.hidden {
+	display: none;
 }
