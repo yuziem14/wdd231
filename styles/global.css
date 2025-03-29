@@ -144,6 +144,7 @@ header .menu-button {
 }
 
 .menu-button .menu-stick {
+	display: block;
 	list-style-type: none;
 	width: 1.5rem;
 	height: 0.25rem;
