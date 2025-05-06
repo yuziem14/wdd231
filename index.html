@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:title" content="WDD231 | Web Frontend Development | Yuri Ziemba Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.bienaldecuritiba.com.br/wp-content/uploads/2023/07/jardim-botanico-curitiba-1.jpeg">
+    <meta property="og:url" content="https://yuziem14.github.io/wdd231/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yuri Ferreira Ziemba Nunes" />
+    <meta
+      name="description"
+      content="WDD 131 Dynamic Web Fundamentals | Yuri Ziemba Home Page"
+    />
+    <title>WDD231 - Web Frontend Development - Yuri Ziemba Nunes</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="profile container">
+        <img
+          src="images/profile.png"
+          alt="Yuri Ziemba Nunes Profile Picture"
+          width="80"
+        />
+        <h1>Yuri F. Z. Nunes</h1>
+        <button type="button" class="menu-button">
+          <i class="menu-stick"></i>
+          <i class="menu-stick"></i>
+          <i class="menu-stick"></i>
+        </button>
+      </div>
+      <nav class="menu-bar">
+        <div class="container">
+          <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="chamber">Chamber</a></li>
+            <li><a href="https://github.com/yuziem14">GitHub Profile</a></li>
+            <li><a href="https://br.linkedin.com/in/yuri-znunes">LinkedIn</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Home</h1>
+      <section>
+        <h2>Course Work</h2>
+        <ul class="section-content">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Curitiba, Brazil</h2>
+        <div class="section-content">
+          <img
+            id="botanical_garden"
+            src="images/botanic-garden-curitiba.jpg"
+            alt="Botanical Garden, Curitiba"
+          />
+          <label>Botanical Garden</label>
+        </div>
+      </section>
+      <section>
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="section-content">
+          <div class="course-menu">
+            <button type="button" data-filter-value="all">All</button>
+            <button type="button" data-filter-value="cse">CSE</button>
+            <button type="button" data-filter-value="wdd">WDD</button>
+          </div>
+          <hr />
+          <ul class="courses">
+            <!-- <li class="completed">
+              <p>Course Name</p>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          &copy;<span id="currentyear"></span> | Yuri Ferreira Ziemba Nunes |
+          Brazil
+          <img
+            src="images/brazil-flag.png"
+            alt="Brazil Flag"
+            width="32"
+          />
+        </p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+  </body>
+</html>
