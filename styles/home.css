@@ -1,10 +1,6 @@
 header, header.container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	position: relative;
 	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-bottom: 0;
 	background-color: var(--primary-color);
 	color: var(--dark-text-color);
 	font-size: 1.25rem;
@@ -12,16 +8,11 @@ header, header.container {
 	font-family: 'Bebas Neue';
 }
 
-header {
-	position: relative;
-}
-
 header img {
 	max-width: 4rem;
 }
 
 header .profile.container {
-	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -35,10 +26,6 @@ header .menu-button {
 	background-color: transparent;
 	align-self: flex-start;
 	
-}
-
-nav.menu-bar {
-	display: none;
 }
 
 .menu-button .menu-stick {
@@ -58,15 +45,6 @@ nav.menu-bar {
 
 .menu-button .menu-stick:last-of-type {
 	margin: 0;
-}
-
-header:has(.menu-bar.active) .menu-button {
-	position: relative;
-	z-index: 4;
-}
-
-header:has(.menu-bar.active) .menu-button .menu-stick {
-	background-color: var(--gray-color);
 }
 
 header:has(.menu-bar.active) .menu-button .menu-stick:nth-child(3) {
@@ -148,26 +126,31 @@ ul.section-content {
 	font-family: var(--secondary-font-family);
 }
 
-.menu-bar.active {
-	display: flex !important;
-	flex: 1;
-	visibility: visible;
-	position: fixed;
-	background-color: var(--secondary-color);
-	width: 100vw;
-	height: 100vh;
-	z-index: 3;
-	top: 0;
-	left: 0;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	margin: 0 !important;
-	padding: 0 !important;
+nav.menu-bar .container {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: 1s ease-in-out !important;
 }
 
-.menu-bar.active ul li {
-	padding-bottom: 1rem;
+nav.menu-bar {
+	margin-top: 1.5rem;
+	background-color: var(--secondary-color);
+}
+
+nav.menu-bar ul {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+	overflow: hidden;
+}
+
+nav.menu-bar.active .container {
+	grid-template-rows: 1fr;
+	padding: 1rem !important;
+}
+
+.menu-bar.active .container {
+	width: 100%;
 }
 
 .menu-bar ul li:hover a {
