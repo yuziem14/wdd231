@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      property="og:title"
+      content="Curitiba Chamber Of Commerce | Business Directory"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://yuziem14.github.io/wdd231/chamber/images/c3-logo.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://yuziem14.github.io/wdd231/chamber/directory.html"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yuri Ferreira Ziemba Nunes" />
+    <meta
+      name="description"
+      content="The Curitiba Chamber Of Commerce Website | Business Directory Page"
+    />
+    <title>C³ | Curitiba Chamber Of Commerce</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <div class="brand">
+            <img src="images/c3-logo.svg" alt="C3 Logo" loading="lazy" />
+            <div class="brand-name">
+              <h1>[C<sup>3</sup>] Curitiba</h1>
+              <p>Chamber Of Commerce</p>
+            </div>
+          </div>
+          <button type="button" class="menu-button">
+            <i class="menu-stick"></i>
+            <i class="menu-stick"></i>
+            <i class="menu-stick"></i>
+          </button>
+        </div>
+        <nav class="menu-bar">
+          <div class="container">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="discover.html">Discover</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="title">
+          <img
+            src="images/icons/business.svg"
+            alt="Business Icon Image"
+            loading="lazy"
+          />
+          <h2>Business Directory</h2>
+        </div>
+        <h3>Meet Our Members</h3>
+        <p>
+          Check out the members of C³ Curitiba Chamber of Commerce and grow with
+          us.
+        </p>
+
+        <section>
+          <div class="view-selector">
+            <button type="button" class="active" data-type="grid">
+              Grid View
+            </button>
+            <button type="button" data-type="list">List View</button>
+          </div>
+          <div class="cards" data-viewtype="grid">
+            <!-- <article class="card">
+              <div class="card-header">
+                <figure class="hero-image">
+                  <img
+                    loading="lazy"
+                    data-herourl="/chamber/images/members/cafe-batel-charm-hero.jpg"
+                    data-logourl="/chamber/images/members/cafe-batel-charm-logo.png"
+                    data-business-name="Café Batel Charm"
+                    src="/chamber/images/members/cafe-batel-charm-hero.jpg"
+                    alt="Hero Image for Café Batel Charm"
+                  />
+                </figure>
+                <h1>Café Batel Charm</h1>
+              </div>
+              <div class="card-body">
+                <p>
+                  Cozy artisan café serving single-origin coffee and fresh
+                  pastries.
+                </p>
+                <hr />
+                <div class="info">
+                  <p><span>Phone: </span> (41) 3333-1234</p>
+                  <p><span>Address: </span> Avenida do Batel, 102</p>
+                  <p><span>Department: </span> Cozy artisan café</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a
+                  class="button-link"
+                  target="_blank"
+                  href="http://www.batelcharm.cur"
+                  ><img
+                    src="/chamber/images/icons/network-globe.svg"
+                    alt="Open URL icon"
+                    loading="lazy"
+                  /><span>Visit Website</span></a
+                >
+              </div>
+              <img
+                class="membership-badge"
+                src="/chamber/images/icons/silver-seal.svg"
+                alt="Membership Level 2"
+                loading="lazy"
+              />
+            </article> -->
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <section class="info">
+          <h6>C<sup>3</sup> | Curitiba Chamber Of Commerce</h6>
+          <p>Água Verde, Curitiba - PR, Brazil</p>
+          <p>contact@cwbchamberofcommerce.com</p>
+          <p>55 41 91824-4324</p>
+        </section>
+        <section class="social-media">
+          <a
+            href="https://www.facebook.com/cwbchamberofcommerce"
+            target="_blank"
+          >
+            <img src="images/icons/facebook.svg" alt="Facebook Icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/cwbchamberofcommerce"
+            target="_blank"
+          >
+            <img src="images/icons/instagram.svg" alt="Instagram Icon" />
+          </a>
+          <a href="https://wa.me/5541918244324" target="_blank">
+            <img src="images/icons/whatsapp.svg" alt="WhatsApp Icon" />
+          </a>
+        </section>
+        <section class="copyright">
+          <p>WDD231 Class Project</p>
+          <p>Yuri Ziemba Nunes</p>
+          <p>
+            &copy; <span id="currentyear"></span> Curitiba Chamber Of Commerce
+          </p>
+          <p id="lastModified"></p>
+        </section>
+      </div>
+    </footer>
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/dates.js" defer></script>
+  </body>
+</html>
