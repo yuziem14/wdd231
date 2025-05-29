@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Café Batel Charm",
+    "description": "Cozy artisan café serving single-origin coffee and fresh pastries.",
+    "address": "Avenida do Batel, 102",
+    "phoneNumber": "(41) 3333-1234",
+    "websiteUrl": "http://www.batelcharm.cur",
+    "imageUrl": "images/members/cafe-batel-charm-hero.jpg",
+    "logoUrl": "images/members/cafe-batel-charm-logo.png",
+    "membershipLevel": 2,
+    "tagLine": "Cozy artisan café"
+  },
+  {
+    "name": "Florarte Curitiba",
+    "description": "Eco-friendly floral boutique focused on sustainable arrangements.",
+    "address": "Rua das Flores, 87",
+    "phoneNumber": "(41) 99887-6543",
+    "websiteUrl": "http://www.florarte.cur",
+    "imageUrl": "images/members/florarte-curitiba-hero.jpg",
+    "logoUrl": "images/members/florarte-curitiba-logo.png",
+    "membershipLevel": 3,
+    "tagLine": "Eco-friendly floral boutique"
+  },
+  {
+    "name": "SolarEco BR",
+    "description": "Clean energy specialists offering solar panel installation for homes and businesses.",
+    "address": "Parque Industrial, 22",
+    "phoneNumber": "(41) 3456-9876",
+    "websiteUrl": "http://www.solarecobr.cur",
+    "imageUrl": "images/members/solareco-br-hero.png",
+    "logoUrl": "images/members/solareco-br-logo.png",
+    "membershipLevel": 1,
+    "tagLine": "Clean energy specialists"
+  },
+  {
+    "name": "Curitiba Creatives Co.",
+    "description": "A modern coworking space for freelancers, creators, and startups.",
+    "address": "Rua Inovação, 55",
+    "phoneNumber": "(41) 3211-0009",
+    "websiteUrl": "http://www.curitibacreatives.cur",
+    "imageUrl": "images/members/curitiba-creatives-co-hero.png",
+    "logoUrl": "images/members/curitiba-creatives-co-logo.png",
+    "membershipLevel": 1,
+    "tagLine": "Modern coworking space"
+  },
+  {
+    "name": "Sabor Local Gastronomia",
+    "description": "Authentic Paraná cuisine, celebrating regional ingredients and traditional recipes.",
+    "address": "Mercado Municipal, Box 34",
+    "phoneNumber": "(41) 3012-3456",
+    "websiteUrl": "http://www.saborlocal.cur",
+    "imageUrl": "images/members/sabor-local-gastronomia-hero.jpg",
+    "logoUrl": "images/members/sabor-local-gastronomia-logo.png",
+    "membershipLevel": 2,
+    "tagLine": "Authentic Paraná cuisine"
+  },
+  {
+    "name": "Bike & Soul Tours",
+    "description": "Guided bicycle tours exploring the parks and cultural highlights of Curitiba.",
+    "address": "Rua Chile, 1625",
+    "phoneNumber": "(41) 98765-4321",
+    "websiteUrl": "http://www.bikeandsoul.cur",
+    "imageUrl": "images/members/bike-soul-tours-hero.png",
+    "logoUrl": "images/members/bike-soul-tours-logo.png",
+    "membershipLevel": 1,
+    "tagLine": "Guided bicycle tours"
+  },
+  {
+    "name": "TechWise Solutions",
+    "description": "IT support and consulting services for small and medium-sized businesses.",
+    "address": "Avenida Paraná, 5001",
+    "phoneNumber": "(41) 3344-5566",
+    "websiteUrl": "http://www.techwisesolutions.cur",
+    "imageUrl": "images/members/techwise-solutions-hero.jpg",
+    "logoUrl": "images/members/techwise-solutions-logo.png",
+    "membershipLevel": 1,
+    "tagLine": "IT support and consulting"
+  },
+  {
+    "name": "Artisanal Leather Goods - Couro Fino",
+    "description": "Handmade leather bags, wallets, and accessories crafted with quality and care.",
+    "address": "Largo da Ordem, 12",
+    "phoneNumber": "(41) 99123-4567",
+    "websiteUrl": "http://www.courofino.cur",
+    "imageUrl": "images/members/couro-fino-hero.png",
+    "logoUrl": "images/members/couro-fino-logo.png",
+    "membershipLevel": 3,
+    "tagLine": "Handmade leather goods"
+  },
+  {
+    "name": "Verde Viva Gardens",
+    "description": "Landscape design and maintenance, creating sustainable and beautiful outdoor spaces.",
+    "address": "Rua da Natureza, 777",
+    "phoneNumber": "(41) 3543-2109",
+    "websiteUrl": "https://www.verdeviva.cur",
+    "imageUrl": "images/members/verde-viva-gardens-hero.png",
+    "logoUrl": "images/members/verde-viva-gardens-logo.png",
+    "membershipLevel": 2,
+    "tagLine": "Landscape design and maintenance"
+  }
+]
