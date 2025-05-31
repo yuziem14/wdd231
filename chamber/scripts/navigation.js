@@ -6,11 +6,9 @@ function toggleNavbar() {
     const isActive = navbar.classList.contains('active');
     
     navbar.classList.remove('active')
-    document.querySelector('footer').classList.remove('hidden')
 
     if(!isActive) {
         navbar.classList.add('active');
-        document.querySelector('footer').classList.add('hidden');
     }
 }
 
