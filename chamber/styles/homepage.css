@@ -1,0 +1,184 @@
+main {
+  margin-top: 0;
+}
+
+main .hero-image {
+  --hero-height: 512px;
+  position: relative;
+  width: 100%;
+  max-height: var(--hero-height);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+}
+
+main .hero-image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.64);
+  z-index: 2;
+}
+
+main .hero-image a.link-button {
+  --link-bt-border-color: var(--secondary-color);
+  --link-bt-color: var(--secondary-color);
+  width: 40%;
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  z-index: 3;
+  margin-bottom: 2rem;
+}
+
+main .hero-image a.link-button:hover {
+  --link-bt-bgcolor: var(--secondary-color);
+  --link-bt-border-color: var(--secondary-color);
+  --link-bt-color: var(--light-color);
+}
+
+main .hero-image img {
+  width: 100%;
+  max-height: var(--hero-height);
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+main #info h1 {
+  grid-column: 1 / 4;
+  margin-bottom: 1.5rem;
+}
+
+main #info {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 0.5rem;
+}
+
+main #info article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-color);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+main #info article h2 {
+  flex: 1;
+  max-height: max-content;
+  font-size: 1.125rem;
+  text-align: left;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  margin-bottom: 0;
+  border-radius: 0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+main #info article .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 2rem 1rem;
+}
+
+main #info .content > p {
+  font-size: 1.25rem;
+}
+
+main #info article#current-weather .temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+main #info article#weather-forecast .content span {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+main #spotlight h2 {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+}
+
+main #spotlight .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+main #spotlight .member-card {
+  background-color: var(--gray-color);
+  border-radius: 0.5rem;
+}
+
+main #spotlight .member-card .card-header {
+  --card-header-bgcolor: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  background-color: var(--card-header-bgcolor);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+main #spotlight .member-card[data-member-level="2"] .card-header {
+  --card-header-bgcolor: var(--silver-color);
+}
+
+main #spotlight .member-card[data-member-level="3"] .card-header {
+  --card-header-bgcolor: var(--gold-color);
+}
+
+main #spotlight .member-card .card-header p {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+main #spotlight .member-card .card-header img {
+  max-width: 4rem;
+  border-radius: 100%;
+}
+
+main #spotlight .member-card .card-body {
+  padding: 1rem 0.5rem;
+}
+
+main #spotlight .member-card .card-body p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: center;
+}
+
+main #spotlight .link-button {
+  grid-column: 1 / 4;
+}
+
+@media screen and (max-width: 864px) {
+  main #info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  main #spotlight .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
