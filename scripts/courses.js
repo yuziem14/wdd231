@@ -67,6 +67,8 @@ const courses = [
   },
 ];
 
+const courseDetailsDialog = document.querySelector("dialog#course-details");
+
 function populateCourses(courses) {
   const coursesList = document.querySelector("ul.courses");
 
@@ -79,6 +81,8 @@ function populateCourses(courses) {
 
     courseItem.appendChild(courseItemName);
     coursesList.appendChild(courseItem);
+
+    courseItem.addEventListener("click", () => displayCourseDetails(course));
   });
 }
 
@@ -93,6 +97,23 @@ function filterCourses(subject = "all") {
   const coursesList = document.querySelector("ul.courses");
   coursesList.innerHTML = "";
   populateCourses(coursesFiltered);
+}
+
+function displayCourseDetails(course = {}) {
+  courseDetailsDialog.innerHTML = "";
+  courseDetailsDialog.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+  `;
+  courseDetailsDialog.showModal();
+
+  const closeModalButton = courseDetailsDialog.querySelector("#closeModal");
+  closeModalButton.addEventListener("click", async () => courseDetailsDialog.close());
 }
 
 document
