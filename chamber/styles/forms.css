@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;    
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group, .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group[data-columns="2"] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--secondary-color);
+    min-height: 2rem;
+}
+
+fieldset legend {
+    display: none;
+}

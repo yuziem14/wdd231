@@ -486,6 +486,7 @@ footer .social-media a img {
 
   .container {
     padding: 0;
+    width: 100%;
     max-width: 80%;
     margin: 0 auto;
   }

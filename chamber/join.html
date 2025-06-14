@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Curitiba Chamber Of Commerce" />
+    <meta
+      property="og:description"
+      content="Join Us In Curitiba Chamber Of Commerce Website"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://yuziem14.github.io/wdd231/chamber/images/c3-logo.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://yuziem14.github.io/wdd231/chamber/join.html"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yuri Ferreira Ziemba Nunes" />
+    <meta
+      name="description"
+      content="The Curitiba Chamber Of Commerce Website | Join Us"
+    />
+    <title>C³ | Curitiba Chamber Of Commerce</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/forms.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <div class="brand">
+            <img src="images/c3-logo.svg" alt="C3 Logo" loading="lazy" />
+            <div class="brand-name">
+              <h1>[C<sup>3</sup>] Curitiba</h1>
+              <p>Chamber Of Commerce</p>
+            </div>
+          </div>
+          <button type="button" class="menu-button" aria-label="Button Menu">
+            <i class="menu-stick"></i>
+            <i class="menu-stick"></i>
+            <i class="menu-stick"></i>
+          </button>
+        </div>
+        <nav class="menu-bar">
+          <div class="container">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a class="active" href="join.html">Join</a></li>
+              <li><a href="discover.html">Discover</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Join Us!</h1>
+      <form action="/thankyou.html" class="form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="form-group" data-columns="2">
+            <div class="input-group">
+              <label for="firstNameInput">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstNameInput"
+                required
+                title="First Name"
+                autocomplete="name"
+              />
+            </div>
+            <div class="input-group">
+              <label for="lastNameInput">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastNameInput"
+                required
+                title="Last Name"
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="emailInput">E-mail Address</label>
+            <input
+              type="email"
+              name="email"
+              id="emailInput"
+              required
+              title="E-mail Address"
+              autocomplete="email"
+              placeholder="you@email.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phoneNumberInput">Mobile Phone Number</label>
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phoneNumberInput"
+              required
+              title="Mobile Phone Number"
+              autocomplete="tel"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Business Information</legend>
+          <div class="form-group">
+            <label for="membershipLevelInput">Membership Level</label>
+            <select name="membershipLevel" id="membershipLevelInput" required>
+              <option value="0">Non-Profit</option>
+              <option value="1">Bronze</option>
+              <option value="2">Silver</option>
+              <option value="3">Gold</option>
+            </select>
+          </div>
+          <div class="form-group" data-columns="2">
+            <div class="input-group">
+              <label for="organizationNameInput">Organization Name</label>
+              <input
+                type="text"
+                name="organizationName"
+                id="organizationNameInput"
+                required
+                title="Organization Name"
+                autocomplete="organization"
+              />
+            </div>
+            <div class="input-group">
+              <label for="organizationalTitleInput">Organizational Title</label>
+              <input
+                type="text"
+                name="organizationalTitle"
+                id="organizationalTitleInput"
+                required
+                title="Organizational Title"
+                autocomplete="organization-title"
+                pattern="^[A-Za-z\- ]{7,}$"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="businessDescriptionInput">Business Description</label>
+            <textarea
+              id="businessDescriptionInput"
+              name="businessDescription"
+              title="Business Description"
+            ></textarea>
+          </div>
+        </fieldset>
+        <input
+          type="hidden"
+          id="formLoadedTimestampInput"
+          name="formLoadedTimestamp"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <div class="container">
+        <section class="info">
+          <h6>C<sup>3</sup> | Curitiba Chamber Of Commerce</h6>
+          <p>Água Verde, Curitiba - PR, Brazil</p>
+          <p>contact@cwbchamberofcommerce.com</p>
+          <p>55 41 91824-4324</p>
+        </section>
+        <section class="social-media">
+          <a
+            href="https://www.facebook.com/cwbchamberofcommerce"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              src="images/icons/facebook.svg"
+              alt="Facebook Icon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/cwbchamberofcommerce"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              src="images/icons/instagram.svg"
+              alt="Instagram Icon"
+            />
+          </a>
+          <a href="https://wa.me/5541918244324" target="_blank">
+            <img
+              loading="lazy"
+              src="images/icons/whatsapp.svg"
+              alt="WhatsApp Icon"
+            />
+          </a>
+        </section>
+        <section class="copyright">
+          <p>WDD231 Class Project</p>
+          <p>Yuri Ziemba Nunes</p>
+          <p>
+            &copy; <span id="currentyear"></span> Curitiba Chamber Of Commerce
+          </p>
+          <p id="lastModified"></p>
+        </section>
+      </div>
+    </footer>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join.js" type="module"></script>
+  </body>
+</html>
