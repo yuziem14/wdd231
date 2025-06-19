@@ -1,0 +1,133 @@
+/* General Body Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+/* Container for content */
+.container {
+  max-width: 960px;
+  margin: 0 auto; /* Justify horizontally (center) */
+  background-color: #1a1a1a; /* Dark gray for content background to provide subtle distinction */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: none; /* Remove shadows for minimalism */
+  border: 1px solid #333; /* Subtle border */
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff; /* White for headings */
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 1px solid #555; /* Subtle border for separation */
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Paragraphs and Lists */
+p {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #555; /* Gray separator */
+  margin: 2em 0;
+}
+
+/* Color Schema Section Specific */
+.color-box {
+  --color-box-size: 80px;
+  display: inline-block;
+  width: var(--color-box-size);
+  height: var(--color-box-size);
+  min-width: var(--color-box-size);
+  min-height: var(--color-box-size);
+  border: 1px solid #555; /* Subtle border */
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.color-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-info p {
+  color: #fff; /* Ensure text in color-info is white */
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #555; /* Subtle border */
+  border-radius: 5px;
+  box-shadow: none; /* Remove shadows */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+}
