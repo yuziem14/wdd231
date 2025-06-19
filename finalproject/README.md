@@ -31,13 +31,14 @@ To understand the user experience and ensure the site meets its objectives, here
 
 ### Color Schema
 
-The color schema aims for a modern, clean, and inviting aesthetic suitable for a movie-related application.
+The color schema for MovieTrack will be inspired by the sophisticated and engaging aesthetics of popular streaming services like Netflix and Amazon Prime Video. The aim is to create a modern, sleek, and immersive experience that keeps the focus on movie content while providing a visually appealing interface.
 
-* **Primary Background:** Dark Blue (`#003089`) - This deep blue provides a strong contrast for lighter text and vibrant accents.
-* **Accent Color (Interactive Elements/Highlights):** Bright Orange (`#FF7F50`) - A lively orange to highlight interactive elements, buttons, and important information.
-* **Text Color (Main):** Off-White (`#F8F8FF`) - A very light, almost white color, ensuring excellent readability against the dark blue background.
-* **Secondary Text/Subtle Elements:** Light Blue-Gray (`#B0C4DE`) - A subtle blue-gray for less prominent text, providing a softer contrast.
-* **Call to Action/Success:** Teal (`#008080`) - A shade of teal for positive actions, offering a good contrast and a visually distinct cue.
+* **Primary Background:** **Deep Charcoal** (`#141414`) - A dark, almost black, background reminiscent of a cinematic environment, perfect for making vibrant content pop.
+* **Secondary Background:** **Slightly Lighter Charcoal** (`#202020`) - Used for subtle differentiation of sections or components, maintaining a dark theme.
+* **Accent Color (Interactive Elements/Highlights):** **Vibrant Red** (`#E50914`) - A bold and energetic red, similar to Netflix's branding, used for call-to-action buttons, active selections, and key highlights.
+* **Text Color (Main):** **Soft White** (`#F5F5F1`) - A slightly off-white for primary text, ensuring excellent readability against the dark background without being overly stark.
+* **Secondary Text/Subtle Elements:** **Medium Gray** (`#808080`) - A neutral gray for less prominent text, subtitles, or inactive elements, providing subtle visual hierarchy.
+* **Success/Confirmation:** **Forest Green** (`#28A745`) - A clear, reassuring green for success messages, confirmations, or positive indicators, offering a strong contrast to the darker palette.
 ---
 
 ### Typography

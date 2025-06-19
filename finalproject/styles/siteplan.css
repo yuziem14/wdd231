@@ -1,133 +1,120 @@
-/* General Body Styles */
+@import url('global.css');
+
 body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 20px;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  padding: 1.5rem;
+  background-color: var(--secondary-color);
 }
 
 /* Container for content */
 .container {
-  max-width: 960px;
-  margin: 0 auto; /* Justify horizontally (center) */
-  background-color: #1a1a1a; /* Dark gray for content background to provide subtle distinction */
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: none; /* Remove shadows for minimalism */
-  border: 1px solid #333; /* Subtle border */
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  border: 1px solid var(--background-light);
 }
 
 /* Headings */
 h1,
 h2,
-h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #fff; /* White for headings */
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-h1 {
-  font-size: 2.5em;
-  text-align: center;
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 h2 {
-  font-size: 2em;
-  border-bottom: 1px solid #555; /* Subtle border for separation */
-  padding-bottom: 5px;
-  margin-top: 30px;
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 /* Paragraphs and Lists */
 p {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 ul {
   list-style: disc;
-  margin-left: 20px;
-  margin-bottom: 1em;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 ol {
   list-style: decimal;
-  margin-left: 20px;
-  margin-bottom: 1em;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 /* Horizontal Rule */
 hr {
   border: 0;
   height: 1px;
-  background-color: #555; /* Gray separator */
+  background-color: var(--accent-color); /* Gray separator */
   margin: 2em 0;
 }
 
 /* Color Schema Section Specific */
 .color-box {
-  --color-box-size: 80px;
+  --color-box-size: 5rem;
   display: inline-block;
   width: var(--color-box-size);
   height: var(--color-box-size);
   min-width: var(--color-box-size);
   min-height: var(--color-box-size);
-  border: 1px solid #555; /* Subtle border */
+  border: 1px solid var(--accent-color); /* Subtle border */
   vertical-align: middle;
-  margin-right: 10px;
-  border-radius: 4px;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .color-info {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .color-info p {
-  color: #fff; /* Ensure text in color-info is white */
+  color: var(--text-color-main);
 }
 
 /* Image Styling */
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border: 1px solid #555; /* Subtle border */
-  border-radius: 5px;
-  box-shadow: none; /* Remove shadows */
+  margin: 1.25rem auto;
+  border: 1px solid var(--accent-color);
+  border-radius: 0.25rem;
+  box-shadow: none;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding: 0.5rem
   }
 
   .container {
-    padding: 15px;
+    padding: 1rem;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 
   h3 {
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 }

@@ -1,0 +1,75 @@
+@import url('reset.css');
+
+:root {
+    /* Primary Background: Deep Charcoal */
+    --primary-color: #141414;
+    /* Secondary Background: Slightly Lighter Charcoal for subtle differentiation */
+    --secondary-color: #202020;
+    /* Accent Color (Interactive Elements/Highlights): Vibrant Red */
+    --accent-color: #e50914;
+    /* Text Color (Main): Soft White */
+    --text-color-main: #f5f5f1;
+    /* Secondary Text/Subtle Elements: Medium Gray */
+    --text-color-secondary: #808080;
+    /* Success/Confirmation: Forest Green */
+    --success-color: #28a745;
+
+    /** Other auxiliary colors */
+    --text-light: #f4f4f4;
+    --background-light: #f8f8f8;
+    --background-dark: #1a1a1a;
+
+    /** Typography */
+    --primary-font-family: 'Montserrat', sans-serif;
+    --secondary-font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+body {
+  font-family: var(--secondary-font-family);
+  background-color: var(--primary-color);
+  color: var(--text-color-main);
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font-family);
+  color: var(--accent-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Container for content */
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
