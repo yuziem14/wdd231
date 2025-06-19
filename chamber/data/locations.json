@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Beautiful City Park",
+        "description": "Our expansive city park, perfect for family outings and recreational activities.",
+        "address": "123 Greenbelt Ave, Curitiba",
+        "imageUrl": "images/locations/citypark.webp"
+    },
+    {
+        "title": "Historic Downtown District",
+        "description": "The charming historic downtown, bustling with unique shops and cafes.",
+        "address": "Main St & Heritage Ln, Curitiba",
+        "imageUrl": "images/locations/historic-district.webp"
+    },
+    {
+        "title": "Community Museum",
+        "description": "The local museum, preserving our town's rich history and culture.",
+        "address": "456 Museum Way, Curitiba",
+        "imageUrl": "images/locations/local-museum.webp"
+    },
+    {
+        "title": "Scenic Riverwalk",
+        "description": "Enjoy a peaceful stroll along the scenic riverwalk with beautiful views.",
+        "address": "Access via Riverfront Dr, Curitiba",
+        "imageUrl": "images/locations/riverwalk.webp"
+    },
+    {
+        "title": "Vibrant Farmers Market",
+        "description": "Our weekly farmers market, offering fresh local produce and artisan goods.",
+        "address": "789 Market Rd, Curitiba (Saturdays)",
+        "imageUrl": "images/locations/farmer-market.webp"
+    },
+    {
+        "title": "Modern Public Library",
+        "description": "The modern public library, a hub for learning and community events.",
+        "address": "101 Book St, Curitiba",
+        "imageUrl": "images/locations/library.webp"
+    },
+    {
+        "title": "Cozy Local Bakery",
+        "description": "The aroma of freshly baked goods fills the air at our beloved local bakery.",
+        "address": "202 Oven Ln, Curitiba",
+        "imageUrl": "images/locations/local-bakery.webp"
+    },
+    {
+        "title": "Thriving Community Garden",
+        "description": "Visit the thriving community garden, a place for growth and connection.",
+        "address": "303 Garden Path, Curitiba",
+        "imageUrl": "images/locations/garden.webp"
+    }
+]
