@@ -1,31 +1,34 @@
-@import url('reset.css');
+@import url("reset.css");
 
 :root {
-    /* Primary Background: Deep Charcoal */
-    --primary-color: #141414;
-    /* Secondary Background: Slightly Lighter Charcoal for subtle differentiation */
-    --secondary-color: #202020;
-    /* Accent Color (Interactive Elements/Highlights): Vibrant Red */
-    --accent-color: #e50914;
-    /* Text Color (Main): Soft White */
-    --text-color-main: #f5f5f1;
-    /* Secondary Text/Subtle Elements: Medium Gray */
-    --text-color-secondary: #808080;
-    /* Success/Confirmation: Forest Green */
-    --success-color: #28a745;
+  /* Primary Background: Deep Charcoal */
+  --primary-color: #141414;
+  /* Secondary Background: Slightly Lighter Charcoal for subtle differentiation */
+  --secondary-color: #202020;
+  /* Accent Color (Interactive Elements/Highlights): Vibrant Red */
+  --accent-color: #e50914;
+  /* Text Color (Main): Soft White */
+  --text-color-main: #f5f5f1;
+  /* Secondary Text/Subtle Elements: Medium Gray */
+  --text-color-secondary: #808080;
+  /* Success/Confirmation: Forest Green */
+  --success-color: #28a745;
 
-    /** Other auxiliary colors */
-    --text-light: #f4f4f4;
-    --background-light: #f8f8f8;
-    --background-dark: #1a1a1a;
+  /** Other auxiliary colors */
+  --text-light: #f4f4f4;
+  --background-light: #f8f8f8;
+  --background-dark: #1a1a1a;
+  --accent-dark-color: #c40812;
 
-    /** Typography */
-    --primary-font-family: 'Montserrat', sans-serif;
-    --secondary-font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+  --default-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --box-shadow2: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+  /** Typography */
+  --primary-font-family: "Montserrat", sans-serif;
+  --secondary-font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
-
 
 body {
   font-family: var(--secondary-font-family);
@@ -66,10 +69,228 @@ img {
   display: block;
 }
 
+header {
+  background-color: var(--secondary-color);
+}
 
 /* Container for content */
 .container {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
+}
+
+/** Header */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4rem;
+}
+
+.site-title {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/** Navigation */
+nav {
+  display: none;
+  position: absolute;
+  top: 60px; /* Adjust based on header height */
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  z-index: 1000;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+nav.active {
+  display: block; /* Show when active */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 1rem 0;
+}
+
+nav a {
+  color: var(--text-color-main);
+  text-decoration: none;
+  font-family: var(--primary-font-family);
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--accent-color);
+}
+
+.mobile-nav-toggle {
+  cursor: pointer;
+  z-index: 1001; /* Ensure it's above the nav when open */
+  display: block; /* Show by default on mobile */
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-color-main);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar-desktop {
+  display: none; /* Hidden by default on mobile */
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-top: 1px solid var(--primary-color);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+footer nav a {
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+  color: var(--accent-color);
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-media img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0.8); /* Make social icons slightly less bright */
+  transition: filter 0.3s ease;
+}
+
+.social-media img:hover {
+  filter: brightness(1.2);
+}
+
+footer p {
+  color: var(--text-color-secondary);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+footer nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header .container {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .site-title {
+    text-align: left;
+    flex-grow: 0;
+    margin-right: auto; /* Push nav and search to the right */
+    font-size: 2.5rem;
+  }
+
+  .mobile-nav-toggle {
+    display: none; /* Hide hamburger menu on desktop */
+  }
+
+  nav {
+    position: static; /* Reset positioning */
+    display: block; /* Always show on desktop */
+    width: auto;
+    background-color: transparent;
+    padding-bottom: 0;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .search-bar-desktop {
+    display: block;
+    margin-left: 2rem;
+  }
+
+  .search-bar-desktop input {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--text-color-secondary);
+    background-color: var(--primary-color);
+    color: var(--text-color-main);
+    width: 200px;
+    transition: width 0.3s ease;
+  }
+
+  .search-bar-desktop input:focus {
+    width: 250px;
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  footer nav {
+    display: block;
+  }
 }

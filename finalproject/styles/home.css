@@ -1,0 +1,159 @@
+/* Hero Section */
+.hero-section {
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--default-box-shadow);
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.hero-image-desktop {
+  display: none;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-color-main);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: var(--text-color-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--text-color-main);
+}
+
+.button.primary:hover {
+  background-color: var(--accent-dark-color);
+  transform: translateY(-2px);
+}
+
+/* Features Section */
+.features-section {
+  background-color: var(--secondary-color);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.features-section h2 {
+  margin-bottom: 2.5rem;
+  color: var(--accent-color);
+  font-size: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.feature-item {
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow2);
+}
+
+.feature-item h3 {
+  color: var(--text-color-main);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.feature-item p {
+  color: var(--text-color-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+  }
+
+  .hero-section .container {
+    margin: 0 auto;
+  }
+
+  .hero-section .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    place-items: center;
+  }
+
+  .hero-image-desktop {
+    display: block !important;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-text {
+    flex: 1;
+  }
+
+  .hero-text h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .features-section {
+    padding: 5rem 2rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature-item {
+    padding: 2rem;
+  }
+
+  .feature-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .feature-item p {
+    font-size: 1rem;
+  }
+}

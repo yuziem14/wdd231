@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="MovieTrack" />
+    <meta
+      property="og:description"
+      content="MovieTrack - Track what you've watched. Discover what's next."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://yuziem14.github.io/wdd231/finalproject/images/logo.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://yuziem14.github.io/wdd231/chamber/finalproject/index.html"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yuri Ferreira Ziemba Nunes" />
+    <title>Movies - MovieTrack</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/movies.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="mobile-nav-toggle">
+          <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <h1 class="site-title">Movies</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html" class="active">Movies</a></li>
+            <li><a href="add-movie.html">Add Movie</a></li>
+          </ul>
+        </nav>
+        <form class="search-bar-desktop" method="get" action="movies.html">
+          <input name="search" type="text" placeholder="Search movies..." />
+        </form>
+      </div>
+    </header>
+
+    <main class="movies-page">
+      <div class="container">
+        <div class="filter-sort-section">
+          <div class="filter-controls">
+            <button class="filter-toggle-button">
+              Filters <span class="arrow">▼</span>
+            </button>
+            <div class="filter-options">
+              <label for="genre-filter">Genre:</label>
+              <select id="genre-filter">
+                <option value="">All Genres</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="horror">Horror</option>
+              </select>
+
+              <label for="rating-sort">Sort by Rating:</label>
+              <select id="rating-sort">
+                <option value="desc">Highest First</option>
+                <option value="asc">Lowest First</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-grid">
+          <!-- <div class="movie-card">
+            <img
+              src="https://via.placeholder.com/200x300/e50914/F5F5F1?text=Movie+Poster+1"
+              alt="Movie Poster"
+            />
+            <div class="movie-info">
+              <h3>Space Odyssey 2049</h3>
+              <p class="movie-rating">Rating: 4.5/5</p>
+              <p class="movie-genre">Sci-Fi</p>
+              <button class="view-details-button" data-movie-id="1">
+                View Details
+              </button>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="load-more">
+          <button class="button primary">Load More Movies</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="add-movie.html">Add Movie</a></li>
+          </ul>
+        </nav>
+        <div class="social-media">
+          <a href="#"
+            ><img
+              src="images/icons/facebook.svg"
+              alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/icons/instagram.svg"
+              alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/icons/youtube.svg"
+              alt="Youtube"
+          /></a>
+        </div>
+        <p>&copy; 2025 MovieTrack. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <dialog id="movie-details-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-body">
+          <img
+            id="modal-movie-poster"
+            src=""
+            alt="Movie Poster"
+            class="modal-poster"
+          />
+          <div class="modal-text-content">
+            <h2 id="modal-movie-title"></h2>
+            <p id="modal-movie-genre" class="modal-info"></p>
+            <p id="modal-movie-year" class="modal-info"></p>
+            <p id="modal-movie-rating" class="modal-info"></p>
+            <p id="modal-movie-description" class="modal-info"></p>
+            <div class="modal-actions">
+              <button class="button primary add-to-watchlist-btn">
+                Add to Watchlist
+              </button>
+              <button class="button primary mark-as-watched-btn">
+                Mark as Watched
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="scripts/navigation.js"></script>
+    <script type="module" src="scripts/movies.js"></script>
+  </body>
+</html>

@@ -64,6 +64,10 @@ hr {
   margin: 2em 0;
 }
 
+header, footer {
+  background-color: transparent;
+}
+
 /* Color Schema Section Specific */
 .color-box {
   --color-box-size: 5rem;
